@@ -16,7 +16,7 @@ it will likely say that it's not in the set.
 Imagine this: You are going shopping and when you already left the house you wonder if you should be milk. And then you get message from your roommate 
 that there definitely no milk in the fridge, so you know you should buy it. Orrrr he says he don't know exactly and it might be there, so you need to go back
 and check by yourself. That is more or less what Bloom filter does.
-A Bloom filter is a probabilistic data structure that supports fast membership testing with a trade-off: it may yield false positives but never false negatives.
+Generally speaking, Bloom filter is a probabilistic data structure that supports fast membership testing with a trade-off - it may yield false positives but never false negatives.
 
 ## Key formulas
 The optimal bit array size (m) and hash function count (k) are calculated as:
