@@ -1,0 +1,12 @@
+[package]
+name = "bloom"
+version = "0.1.0"
+edition = "2021"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+
+[dependencies]
+bitvec = "1.0.1"
+twox-hash = "2.1.0"
