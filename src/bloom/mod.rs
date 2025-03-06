@@ -30,8 +30,6 @@ impl Bloom {
 
     /// Set bitmap to true for certain index. Index should be calculated as hash of an item.
     fn set(&mut self, idx: usize) {
-        println!("FFFF {}", self.bits_in_the_filter);
-        println!("FFFF {}", idx);
         self.bitmap.set(idx, true)
     }
 
@@ -74,6 +72,14 @@ impl Bloom {
             }
         }
         true
+    }
+
+    pub fn get_number_of_elements_to_be_inserted(self) -> i32 {
+        self.number_of_elements_to_be_inserted
+    }
+
+    pub fn get_desired_false_positive_probability(self) -> f64 {
+        self.desired_false_positive_probability
     }
 }
 
